@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=">
+  <link rel="stylesheet" type="text/css" href="Guitar.css">
+  <title>Survey </title>
+</head>
+<body>
+    <header>
+        <div class="gradient" id="header">
+           <div><img id="guitar-logo" src="https://us.123rf.com/450wm/mike301/mike3011506/mike301150600013/41847567-stock-vector-guitar-music-concert-poster-layout-template.jpg?ver=6" ></div>
+           <div id="header-description"><h1>Rock and Roll</h1>
+           <p>Welcome to the no.1 music School</p></div>
+        </div>
+        
+    </header>
+    <div class="black-bg" id="main-body">
+        <div  id="intro">
+            <h1 id="title">Rock and Roll Survey</h1>
+            <p id="description">Help us bring you the best learning experience by
+                filling the form
+            </p>
+        </div>
+        
+        <form class="gradient" id="survey-form">
+            <div class="form1">
+                <label id="name-label">
+                    Name:<br>
+                    <input id="name" type="text" placeholder=" Enter your name " required></input><br>
+                </label>
+                <label id="email-label">
+                    Email adress:<br>
+                    <input id="email" type="email" placeholder="Enter your email" required></input><br>
+                </label>
+                <label id="number-label">
+                    Age: (optional)<br>
+                    <input id="number" placeholder="Your Age" type="number" min="10" max="80"></input><br>
+                </label>
+            </div>
+  <!--Dropdown -->
+            <p>What is your Gender?</p>
+            <select id="dropdown">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+  <!-- radio-->
+            <p>How would you describe our school?</p>
+            <label >
+                <input type="radio"name="description" > Excellent</input><br>
+            </label>
+            <label >
+                <input type="radio" name="description"> Good</input><br>
+            </label>
+            <label >
+                <input type="radio" name="description"> Average</input><br>
+            </label>
+            <label >
+                <input type="radio" name="description"> Poor</input><br>
+            </label>
+            <!-- checkboxes   -->
+            <p>What lessons would you like us to improve </p>
+            <label value="feedback">
+                <input type="checkbox"> Guitar Lessons</input><br>
+            </label>
+            <label value="feedback">
+                <input type="checkbox"> Piano lessons</input><br>
+            </label>
+            <label value="feedback">
+                <input type="checkbox"> Trumpet lessons</input><br>
+            </label>
+            <label value="feedback">
+                <input type="checkbox"> Drum-set lessons</input><br>
+            </label>
+            <!-- Text-area -->
+            <p>please describe in what way would you like us to improve</p>
+            <div >
+            <textarea id="textarea" message="" rows="10" columns="300"></textarea>
+            </div><br>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+           
+    </div>
+    <footer class="gradient">
+
+    </footer>
+    <script src="Guitar.js"></script>
+</body>
+</html>
